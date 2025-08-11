@@ -133,7 +133,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Hero Section */}
+    
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-8">
@@ -147,7 +147,7 @@ export default function HomePage() {
             purchase with real-time price tracking.
           </p>
 
-          {/* Quick Stats */}
+        
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">10L+</div>
@@ -165,7 +165,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Categories */}
+     
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -201,7 +201,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Deals Carousel */}
+    
       <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800 transition-colors">
         <ProductCarousel
           products={featuredDeals}
@@ -210,7 +210,6 @@ export default function HomePage() {
         />
       </div>
 
-      {/* How It Works */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -252,7 +251,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Promotional Banner */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-xl border bg-card text-card-foreground shadow-sm bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 text-white border-0 overflow-hidden">
@@ -279,7 +277,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
+
       <footer className="bg-gray-900 dark:bg-black text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">

@@ -5,7 +5,6 @@ import { Search, X } from "lucide-react"
 import { TRENDING_SEARCHES } from "../data/constants"
 import { useNavigate } from "react-router-dom"
 
-// Add these mock suggestions for different product categories
 const getProductSuggestions = (searchQuery) => {
   const allSuggestions = [
     // Electronics

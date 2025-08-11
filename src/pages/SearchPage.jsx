@@ -99,7 +99,6 @@ export default function SearchResultsPage() {
         product.brand.toLowerCase().includes(searchTerm) ||
         product.category.toLowerCase().includes(searchTerm) ||
         product.description?.toLowerCase().includes(searchTerm) ||
-        // Add more flexible matching for common search terms
         (searchTerm.includes("fan") && product.name.toLowerCase().includes("fan")) ||
         (searchTerm.includes("jeans") && product.name.toLowerCase().includes("jeans")) ||
         (searchTerm.includes("phone") && product.category === "Smartphones") ||
@@ -112,7 +111,7 @@ export default function SearchResultsPage() {
       )
     })
 
-    // Apply filters (rest of the filtering logic remains the same)
+    
     if (filters.brand) {
       results = results.filter((product) => product.brand === filters.brand)
     }
@@ -129,7 +128,6 @@ export default function SearchResultsPage() {
       })
     }
 
-    // Apply sorting (rest remains the same)
     switch (sortBy) {
       case "price-low":
         results.sort((a, b) => (mockPrices[a.id]?.price || 0) - (mockPrices[b.id]?.price || 0))
@@ -141,7 +139,7 @@ export default function SearchResultsPage() {
         results.sort((a, b) => (mockPrices[b.id]?.rating || 0) - (mockPrices[a.id]?.rating || 0))
         break
       default:
-        // No specific sorting for relevance in mock data, keep original order
+ 
         break
     }
 
@@ -150,7 +148,7 @@ export default function SearchResultsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-      {/* Header */}
+ 
       <header className="bg-white dark:bg-gray-900 shadow-sm border-b dark:border-gray-700 sticky top-0 z-50 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -184,7 +182,7 @@ export default function SearchResultsPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Mobile Filter Toggle */}
+  
           <div className="lg:hidden">
             <button
               className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full mb-4"
@@ -195,7 +193,7 @@ export default function SearchResultsPage() {
             </button>
           </div>
 
-          {/* Filters Sidebar */}
+
           <div className={`lg:w-1/4 ${showFilters ? "block" : "hidden lg:block"}`}>
             <div className="rounded-xl border bg-card text-card-foreground shadow-sm sticky top-24 bg-white dark:bg-gray-800 dark:border-gray-700">
               <div className="p-6 border-b dark:border-gray-700">
@@ -205,7 +203,7 @@ export default function SearchResultsPage() {
                 </h3>
               </div>
               <div className="p-6 space-y-6">
-                {/* Price Range */}
+            
                 <div>
                   <h4 className="font-medium mb-4 text-gray-900 dark:text-white">Price Range</h4>
                   <input
@@ -244,7 +242,7 @@ export default function SearchResultsPage() {
 
                 <div className="shrink-0 bg-border h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
 
-                {/* Brands */}
+    
                 <div>
                   <h4 className="font-medium mb-4 text-gray-900 dark:text-white">Brands</h4>
                   <div className="space-y-3 max-h-48 overflow-y-auto">
@@ -269,7 +267,7 @@ export default function SearchResultsPage() {
 
                 <div className="shrink-0 bg-border h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
 
-                {/* Categories */}
+            
                 <div>
                   <h4 className="font-medium mb-4 text-gray-900 dark:text-white">Categories</h4>
                   <div className="space-y-3">
@@ -294,7 +292,7 @@ export default function SearchResultsPage() {
 
                 <div className="shrink-0 bg-border h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
 
-                {/* Availability */}
+           
                 <div>
                   <h4 className="font-medium mb-4 text-gray-900 dark:text-white">Availability</h4>
                   <div className="flex items-center space-x-2">
@@ -316,9 +314,9 @@ export default function SearchResultsPage() {
             </div>
           </div>
 
-          {/* Results */}
+       
           <div className="lg:w-3/4">
-            {/* Results Header */}
+         
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
               <div>
                 <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Search Results</h1>
@@ -366,7 +364,7 @@ export default function SearchResultsPage() {
               </div>
             </div>
 
-            {/* Products Grid/List */}
+          
             {filteredResults.length === 0 ? (
               <div className="text-center py-16">
                 <div className="text-6xl mb-4">🔍</div>
@@ -480,7 +478,7 @@ export default function SearchResultsPage() {
               </div>
             )}
 
-            {/* Pagination */}
+      
             {filteredResults.length > 0 && (
               <div className="flex justify-center mt-12">
                 <div className="flex items-center space-x-2">
