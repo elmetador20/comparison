@@ -23,7 +23,6 @@ export default function SearchResultsPage() {
   const [sortBy, setSortBy] = useState("relevance")
   const [showFilters, setShowFilters] = useState(false)
 
-  // Use comprehensive product database instead of limited mock data
   const mockResults = COMPREHENSIVE_PRODUCTS
   const mockPrices = COMPREHENSIVE_PRICES
 
