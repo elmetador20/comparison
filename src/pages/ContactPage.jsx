@@ -39,7 +39,7 @@ export default function ContactPage() {
   {
     icon: Mail,
     title: "Email Us",
-    content: "support@kickcraze.in",
+    content: "support@comparePrize.in",
     description: "We usually respond within 12 hours",
     color: "bg-blue-500"
   },
@@ -53,8 +53,8 @@ export default function ContactPage() {
   {
     icon: MapPin,
     title: "Visit Us",
-    content: "KIET Group of Institutions, Delhi-NCR",
-    description: "Ghaziabad, Uttar Pradesh, India",
+    content: "dharavi ,Mumbai-Pune",
+    description: "Pune, Mumbai, India",
     color: "bg-purple-500"
   },
   {

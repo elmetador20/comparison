@@ -25,9 +25,9 @@ const categories = [
 export default function CategoriesPage() {
   const navigate = useNavigate()
 
-  const handleCategoryClick = (categoryName) => {
-    navigate(`/category/${categoryName.toLowerCase().replace(/\s+/g, '-')}`)
-  }
+  // const handleCategoryClick = (categoryName) => {
+  //   navigate(`/category/${categoryName.toLowerCase().replace(/\s+/g, '-')}`)
+  // }
 
   const handleBackToHome = () => {
     navigate("/")
@@ -78,8 +78,8 @@ export default function CategoriesPage() {
                     <h3 className="font-semibold text-gray-900 dark:text-white text-lg group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
                       {category.name}
                     </h3>
-                    <Badge variant="secondary" className="text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-0">
-                      {category.items} items
+                     <Badge variant="secondary" className="text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-0"> 
+                     
                     </Badge>
                   </div>
                   <ChevronRight className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-400 group-hover:translate-x-1 transition-all duration-300" />
